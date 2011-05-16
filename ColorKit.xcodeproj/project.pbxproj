@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90943EFC1381D1A200D24A03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90943EFB1381D1A200D24A03 /* QuartzCore.framework */; };
 		90C3906A1381B31900C2C4AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C390691381B31900C2C4AE /* UIKit.framework */; };
 		90C3906C1381B31900C2C4AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3906B1381B31900C2C4AE /* Foundation.framework */; };
 		90C3906E1381B31900C2C4AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3906D1381B31900C2C4AE /* CoreGraphics.framework */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90943EFB1381D1A200D24A03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		90C390651381B31900C2C4AE /* ColorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C390691381B31900C2C4AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90C3906B1381B31900C2C4AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90943EFC1381D1A200D24A03 /* QuartzCore.framework in Frameworks */,
 				90C3906A1381B31900C2C4AE /* UIKit.framework in Frameworks */,
 				90C3906C1381B31900C2C4AE /* Foundation.framework in Frameworks */,
 				90C3906E1381B31900C2C4AE /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +53,7 @@
 		90C3905A1381B31900C2C4AE = {
 			isa = PBXGroup;
 			children = (
+				90943EFB1381D1A200D24A03 /* QuartzCore.framework */,
 				90C3906F1381B31900C2C4AE /* ColorKit */,
 				90C390681381B31900C2C4AE /* Frameworks */,
 				90C390661381B31900C2C4AE /* Products */,
@@ -267,6 +271,7 @@
 				90C390821381B31900C2C4AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

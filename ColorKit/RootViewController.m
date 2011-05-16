@@ -7,11 +7,12 @@
 //
 
 #import "RootViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @implementation RootViewController
 
 @synthesize imageView;
+@synthesize sliderVisible;
 @synthesize sliderView;
 @synthesize rSlider;
 @synthesize gSlider;
@@ -30,14 +31,46 @@
         imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
 		[self.view addSubview:imageView];
 		
+		UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Sliders" style:UIBarButtonItemStyleBordered target:self action:@selector(toggleSliders)];
+		[self.navigationItem setRightBarButtonItem:barButton];
+		[barButton release];
+		
 		[self setupSliders];
     }
     return self;
 }
 
+-(void)toggleSliders {
+	if (!sliderVisible) {
+		UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(toggleSliders)];
+		[self.navigationItem setRightBarButtonItem:barButton animated:YES];
+		[barButton release];
+		[UIView animateWithDuration:0.3f 
+						 animations:^{
+							 CGRect frame = sliderView.frame;
+							 frame.origin.y -= sliderView.frame.size.height;
+							 sliderView.frame = frame;
+						 }
+		 ];
+		sliderVisible = YES;
+	} else {
+		UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Sliders" style:UIBarButtonItemStyleBordered target:self action:@selector(toggleSliders)];
+		[self.navigationItem setRightBarButtonItem:barButton animated:YES];
+		[barButton release];
+		[UIView animateWithDuration:0.3f 
+						 animations:^{
+							 CGRect frame = sliderView.frame;
+							 frame.origin.y += sliderView.frame.size.height;
+							 sliderView.frame = frame;
+						 }
+		 ];
+		sliderVisible = NO;
+	}
+}
+
 -(void)setupSliders {
-	self.sliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 320, 240)];
-	sliderView.backgroundColor = [UIColor redColor];
+	self.sliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 220, 320, 220)];
+	sliderView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.5];
 	
 	rSlider = [[UISlider alloc] init];
 	CGRect frame = rSlider.frame;
@@ -49,7 +82,13 @@
 	[sliderView addSubview:rSlider];
 	
 	rLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(rSlider.frame) + 10, CGRectGetMinY(rSlider.frame), 35, 20)];
-	rLabel.text = @"0";
+	rLabel.backgroundColor = [UIColor redColor];
+	rLabel.textAlignment = UITextAlignmentCenter;
+	rLabel.layer.cornerRadius = 5;
+	rLabel.text = @"";
+	rLabel.textColor = [UIColor whiteColor];
+	rLabel.shadowColor = [UIColor darkGrayColor];
+	rLabel.shadowOffset = CGSizeMake(0, -1);
 	[sliderView addSubview:rLabel];
 	
 	gSlider = [[UISlider alloc] init];
@@ -62,7 +101,13 @@
 	[sliderView addSubview:gSlider];
 	
 	gLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(gSlider.frame) + 10, CGRectGetMinY(gSlider.frame), 35, 20)];
-	gLabel.text = @"0";
+	gLabel.text = @"";
+	gLabel.backgroundColor = [UIColor greenColor];
+	gLabel.textAlignment = UITextAlignmentCenter;
+	gLabel.layer.cornerRadius = 5;
+	gLabel.textColor = [UIColor whiteColor];
+	gLabel.shadowColor = [UIColor darkGrayColor];
+	gLabel.shadowOffset = CGSizeMake(0, -1);
 	[sliderView addSubview:gLabel];
 	
 	bSlider = [[UISlider alloc] init];
@@ -75,10 +120,20 @@
 	[sliderView addSubview:bSlider];
 	
 	bLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(bSlider.frame) + 10, CGRectGetMinY(bSlider.frame), 35, 20)];
-	bLabel.text = @"0";
+	bLabel.text = @"";
+	bLabel.backgroundColor = [UIColor blueColor];
+	bLabel.textAlignment = UITextAlignmentCenter;
+	bLabel.layer.cornerRadius = 5;
+	bLabel.textColor = [UIColor whiteColor];
+	bLabel.shadowColor = [UIColor darkGrayColor];
+	bLabel.shadowOffset = CGSizeMake(0, -1);
 	[sliderView addSubview:bLabel];
 	
 	[self.view insertSubview:sliderView aboveSubview:imageView];
+	
+	frame = sliderView.frame;
+	frame.origin.y += sliderView.frame.size.height;
+	sliderView.frame = frame;
 }
 
 -(void)colorUpdate:(id)sender {

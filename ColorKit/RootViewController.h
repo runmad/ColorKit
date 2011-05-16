@@ -11,6 +11,7 @@
 
 @interface RootViewController : UIViewController {
 	UIImageView *imageView;
+	BOOL sliderVisible;
 	UIView *sliderView;
 	UISlider *rSlider;
 	UISlider *gSlider;
@@ -21,6 +22,7 @@
 }
 
 @property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, getter=isSliderVisible) BOOL sliderVisible;
 @property (nonatomic, retain) UIView *sliderView;
 @property (nonatomic, retain) UISlider *rSlider;
 @property (nonatomic, retain) UISlider *gSlider;
