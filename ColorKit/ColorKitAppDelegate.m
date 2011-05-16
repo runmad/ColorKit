@@ -7,15 +7,21 @@
 //
 
 #import "ColorKitAppDelegate.h"
+#import "RootViewController.h"
 
 @implementation ColorKitAppDelegate
-
 
 @synthesize window=_window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// Override point for customization after application launch.
+	RootViewController *rootViewController = [[RootViewController alloc] init];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+	navigationController.toolbarHidden = NO;
+	self.window.rootViewController = navigationController;
+	[rootViewController release];
+	[navigationController release];
 	[self.window makeKeyAndVisible];
     return YES;
 }

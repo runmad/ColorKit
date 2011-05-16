@@ -14,6 +14,7 @@
 		90C390771381B31900C2C4AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C390761381B31900C2C4AE /* main.m */; };
 		90C3907A1381B31900C2C4AE /* ColorKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C390791381B31900C2C4AE /* ColorKitAppDelegate.m */; };
 		90C3907D1381B31900C2C4AE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C3907B1381B31900C2C4AE /* MainWindow.xib */; };
+		90C390851381B33500C2C4AE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C390841381B33500C2C4AE /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,15 @@
 		90C390691381B31900C2C4AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90C3906B1381B31900C2C4AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90C3906D1381B31900C2C4AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		90C390711381B31900C2C4AE /* ColorKit-Info.plist */ = {isa = PBXFileReference; path = "ColorKit-Info.plist"; sourceTree = "<group>"; };
+		90C390711381B31900C2C4AE /* ColorKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorKit-Info.plist"; sourceTree = "<group>"; };
 		90C390731381B31900C2C4AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		90C390751381B31900C2C4AE /* ColorKit-Prefix.pch */ = {isa = PBXFileReference; path = "ColorKit-Prefix.pch"; sourceTree = "<group>"; };
+		90C390751381B31900C2C4AE /* ColorKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorKit-Prefix.pch"; sourceTree = "<group>"; };
 		90C390761381B31900C2C4AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		90C390781381B31900C2C4AE /* ColorKitAppDelegate.h */ = {isa = PBXFileReference; path = ColorKitAppDelegate.h; sourceTree = "<group>"; };
+		90C390781381B31900C2C4AE /* ColorKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorKitAppDelegate.h; sourceTree = "<group>"; };
 		90C390791381B31900C2C4AE /* ColorKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorKitAppDelegate.m; sourceTree = "<group>"; };
 		90C3907C1381B31900C2C4AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		90C390831381B33500C2C4AE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		90C390841381B33500C2C4AE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 			children = (
 				90C390781381B31900C2C4AE /* ColorKitAppDelegate.h */,
 				90C390791381B31900C2C4AE /* ColorKitAppDelegate.m */,
+				90C390831381B33500C2C4AE /* RootViewController.h */,
+				90C390841381B33500C2C4AE /* RootViewController.m */,
 				90C3907B1381B31900C2C4AE /* MainWindow.xib */,
 				90C390701381B31900C2C4AE /* Supporting Files */,
 			);
@@ -157,6 +162,7 @@
 			files = (
 				90C390771381B31900C2C4AE /* main.m in Sources */,
 				90C3907A1381B31900C2C4AE /* ColorKitAppDelegate.m in Sources */,
+				90C390851381B33500C2C4AE /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
