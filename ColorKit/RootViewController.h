@@ -32,5 +32,6 @@
 @property (nonatomic, retain) UILabel *bLabel;
 
 -(void)setupSliders;
+-(void)toggleSliders;
 
 @end

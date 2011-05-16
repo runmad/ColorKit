@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		90943EFC1381D1A200D24A03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90943EFB1381D1A200D24A03 /* QuartzCore.framework */; };
+		90943F091381D94200D24A03 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90943F061381D94200D24A03 /* Default@2x.png */; };
+		90943F0A1381D94200D24A03 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 90943F071381D94200D24A03 /* Default.png */; };
+		90943F0B1381D94200D24A03 /* ColorKit_Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 90943F081381D94200D24A03 /* ColorKit_Screenshot.png */; };
 		90C3906A1381B31900C2C4AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C390691381B31900C2C4AE /* UIKit.framework */; };
 		90C3906C1381B31900C2C4AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3906B1381B31900C2C4AE /* Foundation.framework */; };
 		90C3906E1381B31900C2C4AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3906D1381B31900C2C4AE /* CoreGraphics.framework */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		90943EFB1381D1A200D24A03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		90943F061381D94200D24A03 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		90943F071381D94200D24A03 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		90943F081381D94200D24A03 /* ColorKit_Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorKit_Screenshot.png; sourceTree = "<group>"; };
 		90C390651381B31900C2C4AE /* ColorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C390691381B31900C2C4AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90C3906B1381B31900C2C4AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,7 +59,6 @@
 		90C3905A1381B31900C2C4AE = {
 			isa = PBXGroup;
 			children = (
-				90943EFB1381D1A200D24A03 /* QuartzCore.framework */,
 				90C3906F1381B31900C2C4AE /* ColorKit */,
 				90C390681381B31900C2C4AE /* Frameworks */,
 				90C390661381B31900C2C4AE /* Products */,
@@ -74,6 +79,7 @@
 				90C390691381B31900C2C4AE /* UIKit.framework */,
 				90C3906B1381B31900C2C4AE /* Foundation.framework */,
 				90C3906D1381B31900C2C4AE /* CoreGraphics.framework */,
+				90943EFB1381D1A200D24A03 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,6 +104,9 @@
 				90C390721381B31900C2C4AE /* InfoPlist.strings */,
 				90C390751381B31900C2C4AE /* ColorKit-Prefix.pch */,
 				90C390761381B31900C2C4AE /* main.m */,
+				90943F061381D94200D24A03 /* Default@2x.png */,
+				90943F071381D94200D24A03 /* Default.png */,
+				90943F081381D94200D24A03 /* ColorKit_Screenshot.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +163,9 @@
 			files = (
 				90C390741381B31900C2C4AE /* InfoPlist.strings in Resources */,
 				90C3907D1381B31900C2C4AE /* MainWindow.xib in Resources */,
+				90943F091381D94200D24A03 /* Default@2x.png in Resources */,
+				90943F0A1381D94200D24A03 /* Default.png in Resources */,
+				90943F0B1381D94200D24A03 /* ColorKit_Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

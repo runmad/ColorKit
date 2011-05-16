@@ -36,6 +36,7 @@
 		[barButton release];
 		
 		[self setupSliders];
+		[self toggleSliders];
     }
     return self;
 }
