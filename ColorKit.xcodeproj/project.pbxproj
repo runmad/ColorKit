@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90C3906A1381B31900C2C4AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C390691381B31900C2C4AE /* UIKit.framework */; };
+		90C3906C1381B31900C2C4AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3906B1381B31900C2C4AE /* Foundation.framework */; };
+		90C3906E1381B31900C2C4AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3906D1381B31900C2C4AE /* CoreGraphics.framework */; };
+		90C390741381B31900C2C4AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C390721381B31900C2C4AE /* InfoPlist.strings */; };
+		90C390771381B31900C2C4AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C390761381B31900C2C4AE /* main.m */; };
+		90C3907A1381B31900C2C4AE /* ColorKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C390791381B31900C2C4AE /* ColorKitAppDelegate.m */; };
+		90C3907D1381B31900C2C4AE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C3907B1381B31900C2C4AE /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90C390651381B31900C2C4AE /* ColorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C390691381B31900C2C4AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90C3906B1381B31900C2C4AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90C3906D1381B31900C2C4AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90C390711381B31900C2C4AE /* ColorKit-Info.plist */ = {isa = PBXFileReference; path = "ColorKit-Info.plist"; sourceTree = "<group>"; };
+		90C390731381B31900C2C4AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90C390751381B31900C2C4AE /* ColorKit-Prefix.pch */ = {isa = PBXFileReference; path = "ColorKit-Prefix.pch"; sourceTree = "<group>"; };
+		90C390761381B31900C2C4AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90C390781381B31900C2C4AE /* ColorKitAppDelegate.h */ = {isa = PBXFileReference; path = ColorKitAppDelegate.h; sourceTree = "<group>"; };
+		90C390791381B31900C2C4AE /* ColorKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorKitAppDelegate.m; sourceTree = "<group>"; };
+		90C3907C1381B31900C2C4AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90C390621381B31900C2C4AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C3906A1381B31900C2C4AE /* UIKit.framework in Frameworks */,
+				90C3906C1381B31900C2C4AE /* Foundation.framework in Frameworks */,
+				90C3906E1381B31900C2C4AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90C3905A1381B31900C2C4AE = {
+			isa = PBXGroup;
+			children = (
+				90C3906F1381B31900C2C4AE /* ColorKit */,
+				90C390681381B31900C2C4AE /* Frameworks */,
+				90C390661381B31900C2C4AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90C390661381B31900C2C4AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90C390651381B31900C2C4AE /* ColorKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90C390681381B31900C2C4AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90C390691381B31900C2C4AE /* UIKit.framework */,
+				90C3906B1381B31900C2C4AE /* Foundation.framework */,
+				90C3906D1381B31900C2C4AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90C3906F1381B31900C2C4AE /* ColorKit */ = {
+			isa = PBXGroup;
+			children = (
+				90C390781381B31900C2C4AE /* ColorKitAppDelegate.h */,
+				90C390791381B31900C2C4AE /* ColorKitAppDelegate.m */,
+				90C3907B1381B31900C2C4AE /* MainWindow.xib */,
+				90C390701381B31900C2C4AE /* Supporting Files */,
+			);
+			path = ColorKit;
+			sourceTree = "<group>";
+		};
+		90C390701381B31900C2C4AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90C390711381B31900C2C4AE /* ColorKit-Info.plist */,
+				90C390721381B31900C2C4AE /* InfoPlist.strings */,
+				90C390751381B31900C2C4AE /* ColorKit-Prefix.pch */,
+				90C390761381B31900C2C4AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90C390641381B31900C2C4AE /* ColorKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C390801381B31900C2C4AE /* Build configuration list for PBXNativeTarget "ColorKit" */;
+			buildPhases = (
+				90C390611381B31900C2C4AE /* Sources */,
+				90C390621381B31900C2C4AE /* Frameworks */,
+				90C390631381B31900C2C4AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorKit;
+			productName = ColorKit;
+			productReference = 90C390651381B31900C2C4AE /* ColorKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90C3905C1381B31900C2C4AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Lakeshore Distribution Inc.";
+			};
+			buildConfigurationList = 90C3905F1381B31900C2C4AE /* Build configuration list for PBXProject "ColorKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90C3905A1381B31900C2C4AE;
+			productRefGroup = 90C390661381B31900C2C4AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90C390641381B31900C2C4AE /* ColorKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90C390631381B31900C2C4AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C390741381B31900C2C4AE /* InfoPlist.strings in Resources */,
+				90C3907D1381B31900C2C4AE /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90C390611381B31900C2C4AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C390771381B31900C2C4AE /* main.m in Sources */,
+				90C3907A1381B31900C2C4AE /* ColorKitAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90C390721381B31900C2C4AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C390731381B31900C2C4AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		90C3907B1381B31900C2C4AE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C3907C1381B31900C2C4AE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90C3907E1381B31900C2C4AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90C3907F1381B31900C2C4AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		90C390811381B31900C2C4AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorKit/ColorKit-Prefix.pch";
+				INFOPLIST_FILE = "ColorKit/ColorKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90C390821381B31900C2C4AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorKit/ColorKit-Prefix.pch";
+				INFOPLIST_FILE = "ColorKit/ColorKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90C3905F1381B31900C2C4AE /* Build configuration list for PBXProject "ColorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C3907E1381B31900C2C4AE /* Debug */,
+				90C3907F1381B31900C2C4AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C390801381B31900C2C4AE /* Build configuration list for PBXNativeTarget "ColorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C390811381B31900C2C4AE /* Debug */,
+				90C390821381B31900C2C4AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90C3905C1381B31900C2C4AE /* Project object */;
+}
