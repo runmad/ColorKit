@@ -3,7 +3,7 @@
 //  ColorKit
 //
 //  Created by Rune Madsen on 11-05-16.
-//  Copyright 2011 Lakeshore Distribution Inc. All rights reserved.
+//  Copyright 2012 The App Boutique. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,6 +12,6 @@
 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
 
 @end

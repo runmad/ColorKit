@@ -3,7 +3,7 @@
 //  ColorKit
 //
 //  Created by Rune Madsen on 11-05-16.
-//  Copyright 2011 Lakeshore Distribution Inc. All rights reserved.
+//  Copyright 2012 The App Boutique. All rights reserved.
 //
 
 #import "ColorKitAppDelegate.h"
@@ -20,8 +20,6 @@
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
 	navigationController.toolbarHidden = NO;
 	self.window.rootViewController = navigationController;
-	[rootViewController release];
-	[navigationController release];
 	[self.window makeKeyAndVisible];
     return YES;
 }
@@ -65,10 +63,5 @@
 	 */
 }
 
-- (void)dealloc
-{
-	[_window release];
-    [super dealloc];
-}
 
 @end
