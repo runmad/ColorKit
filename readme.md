@@ -5,4 +5,4 @@ ColorKit is a tiny iOS app (iPhone) which allows for quick and easy color-sampli
 
 It allows developer to easily assess the appearance of tintColor on the device.
 
-![ColorKit Screenshot](ColorKit / ColorKit / ColorKit_Screenshot.png)
+![ColorKit Screenshot](https://github.com/runmad/ColorKit/blob/master/ColorKit/ColorKit_Screenshot.png?raw=true)
